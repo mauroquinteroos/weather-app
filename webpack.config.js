@@ -1,24 +1,32 @@
 const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
-  devServer: {
-
-  },
+  mode: 'production',
   entry: {
     app: path.resolve(__dirname, 'src/app/index.js')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js'
+    filename: 'js/[name].bundle.js'
   },
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: ['babel-loader'],
+        exclude: /node_modules/,
+      },
+      {
         test: /\.css$/,
         use: [
-          'style-loader',
-          'css-loader'
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          {
+            loader: 'css-loader'
+          },
         ]
       }
     ]
@@ -26,6 +34,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html')
-    })
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].bundle.css'
+    }),
+    new OptimizeCSSAssetsPlugin()
   ]
 }
