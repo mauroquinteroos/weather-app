@@ -4,7 +4,7 @@
 
 Using Bootstrap,Vanilla JS, Modules, fetch, FormData and LocalStorage.
 
-![Weather App](https://repository-images.githubusercontent.com/265067862/8e072d80-9f95-11ea-8c6d-ee2e16c799bb)
+<img src="https://repository-images.githubusercontent.com/268384616/744a5980-a38c-11ea-9025-c45bd0333e97" width="800">
 
 Project Demo: https://weather-app-beta-ebon.now.sh/
 
