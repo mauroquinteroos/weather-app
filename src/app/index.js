@@ -11,7 +11,6 @@ const weather = new Weather(city, countryCode)
 
 const fetchWeather = async () => {
   const data = await weather.getWeather()
-  console.log(data)
   ui.render(data)
 }
 
