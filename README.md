@@ -6,6 +6,6 @@ Using Bootstrap,Vanilla JS, Modules, fetch, FormData and LocalStorage.
 
 <img src="https://repository-images.githubusercontent.com/268384616/744a5980-a38c-11ea-9025-c45bd0333e97" width="800">
 
-Project Demo: https://weather-app-beta-ebon.now.sh/
+Project Demo: [weather-mquinteros.vercel.app/](https://weather-mquinteros.vercel.app/)
 
-Develop by [mauroquinteros](https://twitter.com/maurooquinteros) 💚
+Develop by [mauroquinteros](https://twitter.com/mauroquinteroos) 💚
